@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <title>联系我们</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+        }
+        .navbar {
+            overflow: hidden;
+            background-color: #333;
+        }
+        .navbar a {
+            float: left;
+            color: white;
+            text-align: center;
+            padding: 14px 16px;
+            text-decoration: none;
+        }
+        .content {
+            padding: 16px;
+        }
+        .hidden {
+            display: none;
+        }
+    </style>
+</head>
+<body>
+
+<div class="navbar">
+    <a href="#connect" onclick="toggleEmail()">Connect</a>
+</div>
+
+<div id="emailContent" class="content hidden">
+    <p>联系邮箱: <a href="mailto:KaiXin_Studio@outlook.com">KaiXin_Sturio@outlook.com</a></p>
+</div>
+
+<script>
+function toggleEmail() {
+    var emailDiv = document.getElementById("emailContent");
+    if (emailDiv.classList.contains('hidden')) {
+        emailDiv.classList.remove('hidden');
+    } else {
+        emailDiv.classList.add('hidden');
+    }
+}
+</script>
+
+</body>
+</html>
