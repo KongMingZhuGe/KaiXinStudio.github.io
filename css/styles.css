@@ -40,7 +40,23 @@ nav a:hover {
     text-align: left; /* 文本内部左对齐 */
     padding-left: 200px; /* 添加左边距以确保文本稍微偏左 */
 }
+.project {
+    margin-bottom: 20px; /* 在项目之间添加一些间距 */
+}
 
+.project p {
+    display: inline-block;
+    vertical-align: top; /* 确保文本顶部与图片对齐 */
+    width: 60%; /* 根据需要调整宽度 */
+}
+
+.project img {
+    max-width: 38%; /* 图片最大宽度 */
+    height: auto; /* 保持图片原始比例 */
+    display: inline-block;
+    vertical-align: top; /* 确保图片顶部与文本对齐 */
+    margin-left: 2%; /* 在文本和图片之间添加一点空间 */
+}
 footer {
     background-color: #333;
     color: white;
